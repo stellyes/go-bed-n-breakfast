@@ -1,0 +1,24 @@
+{{template "base" .}}
+
+{{define "content"}}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>This is the about page for my Go web application!</h1>
+                <p>My name is Ryan, I'm 24, currently living in California. I've always loved tinkering with computers and was glued to my parents' old desktop rig back in 2007 when the internet was pretty new to me. I have a diverse background that covers everything from art to agriculture, music and more.</p>
+                <p>I'm a full-stack web developer, recently graduated from the UC Berkeley Extension web developer program. I'm comfortable working with Node.js, Express.js, and many different database frameworks. I've also had the pleasure of working with a number of front-end frameworks such as Handlebars, Bootstrap, and React.</p>
+                <p>I also have an understanding of Cloud-based computing in the AWS environment, specializing in their API Gateway, Route 53, and EC2 services. I gained this experience while pursuing my education at CSU Channel Islands as well as an internship with GBL Systems for a year starting in May 2021. I'm eager to apply my front-end and back-end skillset to pursue scalable solutions for a variety of problems.</p>
+                
+                <p>This came from the template: {{index .StringMap "test"}}</p>   
+
+                <p> 
+                    {{ if ne (index .StringMap "remote_ip") "" }}
+                        Your IP address is {{index .StringMap "remote_ip"}}
+                    {{ else }}
+                        Your IP address is super secret! Go can't seem to find it. :( Maybe try <a href="/">going to the homepage</a> and then come back here!
+                    {{ end }}
+                </p>        
+            </div>
+        </div>
+    </div>
+{{end}}
