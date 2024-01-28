@@ -1,9 +1,9 @@
 package handlers
 
 import (
-	"github.com/tsawler/bookings-app/pkg/config"
-	"github.com/tsawler/bookings-app/pkg/models"
-	"github.com/tsawler/bookings-app/pkg/render"
+	"github.com/stellyes/go-bed-n-breakfast/pkg/config"
+	"github.com/stellyes/go-bed-n-breakfast/pkg/models"
+	"github.com/stellyes/go-bed-n-breakfast/pkg/render"
 	"net/http"
 )
 
